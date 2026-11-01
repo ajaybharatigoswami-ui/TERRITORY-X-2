@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1b1147">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<title>TERRITORY X</title>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="map"></div>
+<header class="top">
+  <div class="logo">TERRITORY <span>X</span></div>
+  <div class="chip" id="gps">GPS: wait...</div>
+</header>
+<div class="banner" id="bn">Current Biome: ...</div>
+<section class="pc" id="pc">
+  <div class="row">
+    <div class="av" id="lv">1</div>
+    <div class="grow"><b id="pn">Explorer</b>
+      <div class="xp"><i id="xpb"></i></div>
+      <small id="px">0 XP</small></div>
+  </div>
+  <div class="row2"><span id="pd">0.00 km</span><span id="pt">0 territories</span></div>
+</section>
+<section class="hud" id="hud" hidden>
+  <div><b id="hDist">0.00</b><small>km</small></div>
+  <div><b id="hTime">00:00</b><small>time</small></div>
+  <div><b id="hSpd">0.0</b><small>km/h</small></div>
+  <div><b id="hTer">0</b><small>new</small></div>
+</section>
+<div id="toast" class="toast"></div>
+<nav class="bar">
+  <button id="bLoc" class="round" aria-label="My location">&#9678;</button>
+  <button id="bStart" class="big go">START RUN</button>
+  <button id="bPause" class="big alt" hidden>PAUSE</button>
+  <button id="bFin" class="big stop" hidden>FINISH</button>
+  <button id="bProf" class="round" aria-label="Profile">&#9786;</button>
+</nav>
+<section id="sheet" class="sheet" hidden>
+  <div class="card">
+    <h2>Player Profile</h2>
+    <input id="pName" maxlength="16" aria-label="Player name">
+    <div class="sw" id="sw"></div>
+    <div class="grid" id="pStats"></div>
+    <h3>Recent runs</h3><div id="pRuns" class="list"></div>
+    <h3>Latest territories</h3><div id="pTer" class="list"></div>
+    <div id="mp" class="list"></div>
+    <button id="bClose" class="big go">CLOSE</button>
+  </div>
+</section>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

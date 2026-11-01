@@ -1,0 +1,35 @@
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;background:#1b1147;font-family:system-ui,Roboto,sans-serif;color:#fff}
+#map{position:absolute;inset:0}
+[hidden]{display:none!important}
+.top{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 10px) 14px 18px;background:linear-gradient(#1b1147f2,#1b114700);pointer-events:none}
+.logo{font-weight:900;font-size:21px;letter-spacing:2px;text-shadow:0 2px 8px #000a}
+.logo span{color:#ffd23f}
+.chip{background:#1b1147;border:2px solid #666;border-radius:99px;padding:6px 12px;font-size:13px;font-weight:700}
+.chip.g{border-color:#35d07f}.chip.o{border-color:#ffd23f}.chip.r{border-color:#ff5a36}
+.banner{position:absolute;z-index:5;left:12px;right:12px;top:calc(env(safe-area-inset-top,0px) + 56px);background:#1b1147e6;border:2px solid #3cc8ff;border-radius:14px;padding:8px 12px;font-size:14px;font-weight:700;text-align:center}
+.pc{position:absolute;z-index:5;left:12px;top:calc(env(safe-area-inset-top,0px) + 106px);width:62%;max-width:250px;background:#1b1147e6;border:2px solid #ffd23f;border-radius:18px;padding:8px 10px}
+.row{display:flex;gap:10px;align-items:center}.grow{flex:1;min-width:0}
+.av{width:44px;height:44px;border-radius:50%;background:linear-gradient(#ff4d8d,#8e7dff);border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px;flex:none}
+.xp{height:8px;border-radius:9px;background:#3b2f85;margin:4px 0;overflow:hidden}.xp i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffd23f,#ff8a3d)}
+.pc small{color:#c9c1ff;font-size:11px}
+.row2{display:flex;justify-content:space-between;margin-top:6px;font-size:12px;font-weight:700;color:#ffd23f}
+.hud{position:absolute;z-index:5;left:12px;right:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 92px);display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.hud div{background:#1b1147e6;border:2px solid #ffd23f;border-radius:16px;padding:6px;text-align:center}
+.hud b{display:block;font-size:20px}.hud small{color:#c9c1ff;font-size:11px}
+.toast{position:absolute;z-index:8;left:50%;top:calc(env(safe-area-inset-top,0px) + 175px);transform:translateX(-50%);background:#ffd23f;color:#1b1147;font-weight:800;padding:10px 18px;border-radius:99px;max-width:92%;text-align:center;opacity:0;transition:opacity .3s;pointer-events:none}
+.toast.on{opacity:1}
+.bar{position:absolute;z-index:5;left:0;right:0;bottom:0;display:flex;gap:10px;align-items:center;padding:12px 12px calc(env(safe-area-inset-bottom,0px) + 14px);background:linear-gradient(#1b114700,#1b1147f2 50%)}
+button{font:inherit;border:0;color:#1b1147;cursor:pointer}
+.round{width:56px;height:56px;border-radius:50%;background:#fff;font-size:26px;flex:none;box-shadow:0 4px 12px #0006}
+.big{flex:1;min-height:60px;border-radius:30px;font-weight:900;font-size:19px;letter-spacing:1px;box-shadow:0 4px 14px #0007}
+.go{background:linear-gradient(#7cff6b,#35d07f)}.alt{background:linear-gradient(#ffe27a,#ffd23f)}.stop{background:linear-gradient(#ff8a6b,#ff5a36)}
+.sheet{position:absolute;inset:0;z-index:9;background:#0009;display:flex;align-items:flex-end}
+.card{width:100%;max-height:88%;overflow:auto;background:#241a63;border-radius:28px 28px 0 0;padding:20px 16px calc(env(safe-area-inset-bottom,0px) + 16px)}
+.card h2{margin:0 0 12px}.card h3{margin:16px 0 6px;color:#ffd23f}
+input{width:100%;padding:12px;border-radius:14px;border:2px solid #ffd23f;background:#1b1147;color:#fff;font-size:17px}
+.sw{display:flex;gap:10px;margin:12px 0}.sw button{width:44px;height:44px;border-radius:50%;border:3px solid #fff0}.sw button.on{border-color:#fff}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.grid div{background:#1b1147;border-radius:14px;padding:10px;text-align:center}.grid b{font-size:20px;display:block}
+.list div{background:#1b1147;border-radius:12px;padding:8px 10px;margin-bottom:6px;font-size:14px}
+.pin{width:22px;height:22px;border-radius:50%;border:4px solid #fff;box-shadow:0 0 0 6px #ffffff55,0 2px 8px #000a}
+.card .big{width:100%;margin-top:14px}
